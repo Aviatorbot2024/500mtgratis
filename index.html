@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganhe 5000MT</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      color: #ff0000;
+      margin-bottom: 20px;
+    }
+    #top-button {
+      background-color: #ff0000;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      animation: pulse 1.5s infinite;
+      margin-bottom: 20px;
+    }
+    #top-button:hover {
+      background-color: #cc0000;
+    }
+    #video-container {
+      position: relative;
+      width: 80%;
+      max-width: 720px;
+      border: 5px solid #ff0000;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+    video {
+      width: 100%;
+      display: block;
+    }
+    #message-container {
+      display: none;
+      margin-top: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    #message-container p {
+      font-size: 20px;
+      color: #00ff00;
+      margin: 10px 0;
+    }
+    #message-container a {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff0000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    #message-container a:hover {
+      background-color: #cc0000;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Assista ao vídeo e veja como ganhar dinheiro!</h1>
+  <a href="https://media1.placard.co.mz/redirect.aspx?pid=6189&bid=1690" id="top-button" target="_blank">
+    Clique Aqui e Ganhe 1000MT
+  </a>
+  <div id="video-container">
+    <video id="promo-video" controls>
+      <source src="video.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+  </div>
+  <div id="message-container">
+    <p>🎉 Parabéns por assistir ao vídeo! 🎉</p>
+    <p>Você ganhou <strong>5000MT grátis</strong> de bônus no primeiro depósito!</p>
+    <a href="https://media1.placard.co.mz/redirect.aspx?pid=6189&bid=1690" target="_blank">CLIQUE AQUI PARA SE REGISTRAR E RESGATAR</a>
+  </div>
+
+  <script>
+    const video = document.getElementById('promo-video');
+    const messageContainer = document.getElementById('message-container');
+
+    video.addEventListener('ended', () => {
+      messageContainer.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
