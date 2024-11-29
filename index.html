@@ -73,6 +73,34 @@
     #message-container a:hover {
       background-color: #cc0000;
     }
+    .app-download {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #fff;
+      padding: 20px;
+      border: 5px solid #28a745;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+      background-color: #333;
+    }
+    .app-download a {
+      display: inline-flex;
+      align-items: center;
+      background-color: #28a745;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .app-download a:hover {
+      background-color: #218838;
+    }
+    .app-download img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -110,6 +138,14 @@
     <a href="https://media1.placard.co.mz/redirect.aspx?pid=6189&bid=1690" target="_blank">CLIQUE AQUI PARA SE REGISTRAR E RESGATAR</a>
   </div>
 
+  <!-- Novo caminho para download do aplicativo -->
+  <div class="app-download">
+    <p><strong>BAIXE O APLICATIVO AQUI MELHOR PARA JOGAR E GANHAR DINHEIRO SEMPRE!</strong></p>
+    <a href="app_download_path.apk" download>
+      <img src="android-icon.png" alt="Android Icon"> Baixe o App Agora
+    </a>
+  </div>
+
   <script>
     const video = document.getElementById('promo-video');
     const messageContainer = document.getElementById('message-container');
@@ -119,4 +155,4 @@
     });
   </script>
 </body>
-</html>
+    </html>
